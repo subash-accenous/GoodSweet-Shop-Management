@@ -97,7 +97,7 @@ Deployment guidance for Netlify (Vite + React Router configuration)
 
 Troubleshooting frontend and backend integration issues
 
-Structuring project and creating README content
+for authentication,authorization design brainstorming for backend
 
 ###Test Report
 | Feature           | Test Case                       | Result |
