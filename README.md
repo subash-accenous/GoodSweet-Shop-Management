@@ -3,7 +3,9 @@
 Frontend is deployed on Netlify: https://sweetsshopmanagementsystem.netlify.app/
 
 Backend is deployed on render:  https://sweet-shop-management-system-n6ho.onrender.com/
-##important if you want access deployed site 
+
+
+#important if you want access deployed site 
 render takes cold start 60s on first request open this url https://sweet-shop-management-system-n6ho.onrender.com/ when it says "api ready" then access the frontend it work then without delay https://sweetsshopmanagementsystem.netlify.app/
 
 # Sweet Shop Management System
