@@ -49,7 +49,7 @@ A full-stack web application to manage sweets inventory and allow users to purch
 
 ---
 
-## Setup Instructions to run application locally
+## Setup and Instructions to run application locally
 
 ### Backend
 
