@@ -1,0 +1,18 @@
+.formrl{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width:400px;
+    justify-content: center;
+    align-items:center;
+}
+
+.formwrap{
+    padding-bottom: 30px;
+}
+.sweetcard
+{
+    color:white;
+    background-color: black;
+    margin-bottom: 20px;
+}
