@@ -55,20 +55,36 @@ A full-stack web application to manage sweets inventory and allow users to purch
 
 1. Navigate to the backend folder:
 ->cd Backend
+
+
 ->Install dependencies:
+
   npm install
+  
 ->Create .env file (copy .env.example) and set your MongoDB URL:
+
   db_Url=<your_mongodb_connection_string>
+  
   JWT_SECRET=<your_secret_key>
 
 2.Start the backend server:
+
    node server.js
+   
    Backend will run at http://localhost:3000
 
 ###Frontend
+
+
 ->cd Frontend/sweetsshop-management-system
+
+
 ->npm install
+
+
 ->npm run dev
+
+
 ....Frontend is live now check http://localhost:5173/
 ##UI images
 ##all available sweets ui
