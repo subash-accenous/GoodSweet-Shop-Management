@@ -1,3 +1,11 @@
+##Deployment
+
+Frontend is deployed on Netlify: https://sweetsshopmanagementsystem.netlify.app/
+
+Backend is deployed on render:  https://sweet-shop-management-system-n6ho.onrender.com/
+##important if you want access deployed site 
+render takes cold start 60s on first request open this url https://sweet-shop-management-system-n6ho.onrender.com/ when it says "api ready" then access the frontend it work then without delay https://sweetsshopmanagementsystem.netlify.app/
+
 # Sweet Shop Management System
 
 A full-stack web application to manage sweets inventory and allow users to purchase sweets online. Admins can edit, delete, and restock sweets. The project uses React + Vite for the frontend, Node.js + Express for the backend, and MongoDB as the database.
@@ -65,3 +73,26 @@ A full-stack web application to manage sweets inventory and allow users to purch
 
 ![img alt](https://github.com/panathulamanoj/sweet-shop-management-system/blob/master/Screenshot%202025-12-14%20001220.png?raw=true)
 
+
+##My AI Usage:
+
+I used AI assistance (ChatGPT) for:
+
+UI styling (forms, buttons, navbar, responsive design)
+
+Deployment guidance for Netlify (Vite + React Router configuration)
+
+Troubleshooting frontend and backend integration issues
+
+Structuring project and creating README content
+
+###Test Report
+| Feature           | Test Case                       | Result |
+| ----------------- | ------------------------------- | ------ |
+| User Registration | Register with valid credentials | Passed |
+| User Login        | Login with valid credentials    | Passed |
+| Purchase Sweet    | Select quantity, add to cart    | Passed |
+| Admin Edit        | Edit sweet name and price       | Passed |
+| Admin Delete      | Delete a sweet                  | Passed |
+| Admin Restock     | Increase quantity               | Passed |
+| Responsive UI     | Mobile and desktop layouts      | Passed |
