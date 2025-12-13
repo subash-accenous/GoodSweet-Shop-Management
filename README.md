@@ -1,9 +1,5 @@
-##Deployment
 
-Frontend is deployed on Netlify: https://sweetsshopmanagementsystem.netlify.app/
-
-Backend is deployed on render:  https://sweet-shop-management-system-n6ho.onrender.com/
-## 🚨 IMPORTANT – Read Before Accessing the Application
+## 🚨 IMPORTANT – for Accessing the deployed  Application
 
 ⚠️ **Backend Cold Start Notice (Render Free Tier)**
 
