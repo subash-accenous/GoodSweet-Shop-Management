@@ -11,6 +11,7 @@ export default function({newsweet})
            console.log("calling function");
            newsweet({name:name,price:price,quantity:quantity,category:category});
         }}>
+            <h1>New Sweet</h1>
         <div className="formwrap">
          <label htmlFor="name">Name</label>
          <input type="text" id="name" value={name} onChange={(evt)=>(setname(evt.target.value))}/>     

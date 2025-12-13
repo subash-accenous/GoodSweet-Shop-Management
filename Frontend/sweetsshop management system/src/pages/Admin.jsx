@@ -22,6 +22,7 @@ export default function()
         alert("login to access admin page");
         return <Navigate to="/login" replace />
       }
+      //handles adding of new sweet to database
       const newsweet =async(body)=>{
         console.log("newsweet function called");
         try
@@ -35,18 +36,21 @@ export default function()
           alert("failed to fetch data your session might be expired");
         }
       }
+      //handles pruchase of sweet
       const handlepurchase=async(obj)=>{
        try{
         const res = await api.post(`api/sweets/${obj._id}/purchase`, {
   quantity: obj.qty
 });
        frender();
+       alert("sweet purchase success");
        }
        catch(err)
        {
         alert("failed to purchase data your session might be expired")
        }
     }
+    //handles uppdating sweet information
     const editsweet=async(id,body)=>{
        try{
         const res = await api.put(`api/sweets/${id}`,body);
@@ -58,6 +62,7 @@ export default function()
         alert("failed to update sweet your session might be expired")
        }
     }
+    //handles restocking of sweet quantity increasing
     const restocksweet=async(id,body)=>{
     try{
       const res = await api.post(`api/sweets/${id}/restock`,body);
@@ -69,10 +74,12 @@ export default function()
         alert("failed to restock sweet your session might be expired")
        }
     }
+    //handles deletion of sweet
     const deletesweet=async(id)=>{
         try{
         const res = await api.delete(`api/sweets/${id}`);
        frender();
+       alert("sweet deleted");
        }
        catch(err)
        {
@@ -96,13 +103,14 @@ export default function()
       },[]);
     return (
       <>
-        <NewSweet newsweet={newsweet}/>
-        <h1>Admin page</h1>
+        <div className="sweetsContdboard">
         {
           sweets.map((sweet)=>{
           return <Sweetcard key={sweet._id} sweet={sweet} handlepurchase={handlepurchase} deletesweet={deletesweet} editsweet={editsweet} restocksweet={restocksweet}/>
           })
         }
-        </>
+        </div>
+        <NewSweet newsweet={newsweet}/>
+      </>
     );
 }

@@ -10,6 +10,7 @@ export default function()
     const token = localStorage.getItem("token");
     const [searchq,setsearchq] =useState("");
     const [category,setcategory] =useState("all");
+    //re-fetches all available sweets from database
     async function frender()
     {
       console.log("frender called");
@@ -22,18 +23,21 @@ export default function()
         alert("failed to fetch data your session might be expired");
       }
     }
+    //handles purchase of sweet 
     const handlepurchase=async(obj)=>{
        try{
         const res = await api.post(`api/sweets/${obj._id}/purchase`, {
   quantity: obj.qty
 });
        frender();
+       alert("sweet purchase success")
        }
        catch(err)
        {
         alert("failed to fetch data your session might be expired")
        }
     }
+    //handles search by category,name,price
     const handleqsearch = async(evt)=>
     {
       evt.preventDefault();
@@ -79,7 +83,6 @@ export default function()
   },[])
     return(
       <>
-        <h1>dashboard page all sweets</h1>
         <form className="dboardsearch" onSubmit={handleqsearch}>
           <input placeholder="search" onChange={(evt)=>(setsearchq(evt.target.value))}/>
           <button type="submit">search</button>
@@ -99,11 +102,13 @@ export default function()
       />
       </div>
         </form>
-        {
+        <div className="sweetsContdboard">
+          {
           sweets.map((sweet)=>{
           return <Sweetcard key={sweet._id} sweet={sweet} handlepurchase={handlepurchase} />
           })
         }
+        </div>
         </>
     )
 }
