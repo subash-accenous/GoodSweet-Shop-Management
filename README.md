@@ -50,5 +50,6 @@ A full-stack web application to manage sweets inventory and allow users to purch
 ->npm run dev
 ....Frontend is live now check http://localhost:5173/
 
-
+###all available sweets ui
+![img alt](https://github.com/panathulamanoj/sweet-shop-management-system/blob/master/Screenshot%202025-12-14%20001027.png?raw=true)
 
