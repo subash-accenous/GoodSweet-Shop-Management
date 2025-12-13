@@ -33,7 +33,9 @@ app.use(express.json());
 // }));
 app.use(cors());
 
-
+app.get("/",(req,res)=>{
+  res.send("api ready");
+});
 
 app.post("/api/auth/register", async (req, res) => {
   const user = new User(req.body);
