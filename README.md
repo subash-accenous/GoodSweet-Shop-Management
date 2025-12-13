@@ -49,7 +49,19 @@ A full-stack web application to manage sweets inventory and allow users to purch
 ->npm install
 ->npm run dev
 ....Frontend is live now check http://localhost:5173/
-
+##UI images
 ##all available sweets ui
 ![img alt](https://github.com/panathulamanoj/sweet-shop-management-system/blob/master/Screenshot%202025-12-14%20001027.png?raw=true)
+
+##login ui
+![img alt](https://github.com/panathulamanoj/sweet-shop-management-system/blob/master/Screenshot%202025-12-14%20001220.png?raw=true)
+
+##register ui
+![img alt](https://github.com/panathulamanoj/sweet-shop-management-system/blob/master/Screenshot%202025-12-14%20001052.png?raw=true)
+
+##admin ui
+![img alt](https://github.com/panathulamanoj/sweet-shop-management-system/blob/master/Screenshot%202025-12-14%20001209.png?raw=true)
+
+
+![img alt](https://github.com/panathulamanoj/sweet-shop-management-system/blob/master/Screenshot%202025-12-14%20001220.png?raw=true)
 
